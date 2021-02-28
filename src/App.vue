@@ -1,29 +1,21 @@
 <template>
   <div id="app">
-    <h1>TS study</h1>
     <router-view/>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+// import request from '@/utils/request'
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+// request({
+//   method: 'GET',
+//   url: 'boss/v2/api-docs?group=edu-front-boot'
+// }).then(res => {
+//   console.log(res)
+// })
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+export default Vue.extend({
+  name: 'App'
+})
+</script>
+<style lang="scss" scoped></style>
